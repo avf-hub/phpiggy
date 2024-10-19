@@ -2,6 +2,11 @@
     "name": "fav/phpiggy",
     "description": "A PHP application for tracking expenses.",
     "type": "project",
+    "authors": [
+        {
+            "name": "Andrey Falkovskiy"
+        }
+    ],
     "require": {},
     "autoload": {
         "psr-4": {
