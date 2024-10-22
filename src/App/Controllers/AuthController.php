@@ -7,7 +7,7 @@ namespace App\Controllers;
 use Framework\TemplateEngine;
 use App\Service\ValidatorService;
 
-class AuthContorller
+class AuthController
 {
     public function __construct(
         private TemplateEngine $view,

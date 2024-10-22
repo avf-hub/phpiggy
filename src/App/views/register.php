@@ -41,7 +41,7 @@
         <label class="block">
             <span class="text-gray-700">Social Media URL</span>
             <input value="<? echo escape($oldFormData['socialMediaURL'] ?? ''); ?>" name="socialMediaURL" type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" placeholder="" />
-            <?php if (array_key_exists('socialMediaURL', $errors)) : ?>
+            <? if (array_key_exists('socialMediaURL', $errors)) : ?>
                 <div class="bg-gray-100 mt-2 p-2 text-red-500">
                     <? echo escape($errors['socialMediaURL'][0]); ?>
                 </div>
@@ -79,7 +79,7 @@
                         <div class="bg-gray-100 mt-2 p-2 text-red-500">
                             <? echo escape($errors['tos'][0]); ?>
                         </div>
-                    <?php endif; ?>
+                    <? endif; ?>
                 </div>
             </div>
         </div>
