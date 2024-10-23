@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Controllers;
 
 use Framework\TemplateEngine;
-use App\Service\ValidatorService;
+use App\Services\ValidatorService;
 
 class AuthController
 {
