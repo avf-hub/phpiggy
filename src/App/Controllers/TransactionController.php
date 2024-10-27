@@ -28,4 +28,17 @@ class TransactionController
 
         redirectTo('/');
     }
+
+    public function editView(array $params)
+    {
+        $transaction = $this->transactionService->getUserTransaction($params['transaction']);
+
+        if (!$transaction) {
+            redirectTo('/');
+        }
+
+        echo $this->view->render('transactions/edit.php', [
+            'transaction' => $transaction
+        ]);
+    }
 }
